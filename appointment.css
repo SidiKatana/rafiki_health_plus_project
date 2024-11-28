@@ -1,0 +1,84 @@
+.appointment-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-title, .appointments-title, .book-title, .consultation-title {
+    color: #1f2bdd;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.profile-details p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+.profile-picture {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio */
+     /* Optional: border color */
+}
+.appointment-list {
+    list-style-type: none;
+    padding: 0;
+}
+.appointment-list li {
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.appointment-list li:hover {
+    transform: scale(1.02);
+}
+.appointment-date {
+    display: block;
+    color: var(--text-black-900);
+    font-size: 0.9em;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.appointment-page .top {
+    display: flex;
+    gap: 25px;
+}
+.appointment-page .book-appointment {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+.map {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}

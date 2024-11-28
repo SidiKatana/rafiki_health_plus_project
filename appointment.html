@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/72b31e295f.js" crossorigin="anonymous"></script>
+       <title>Appointment</title>
+</head>
+<body>
+    <div class="main-container">
+        <!--Aside start-->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>T</span>eleMed</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav-link">
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#About"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="#Services"><i class="fa-solid fa-list"></i>Services</a></li>
+                <li><a href="appointment.html"><i class="fa-solid fa-briefcase"></i>Appointments</a></li>
+                <li><a href="#Contacts"><i class="fa-solid fa-comment"></i>Contacts</a></li>
+                <li><a href="logreg/login.html" onclick="openModal('loginModal')"><i class="fa-solid fa-right-to-bracket"></i>Login</a></li>
+                <li><a href="logreg/registration_form.html" onclick="openModal('registerModal')"><i class="fa-solid fa-registered"></i>Register</a></li>
+            </ul>
+            </ul>
+        </div>
+          <!--Aside end-->
+            <!--main content start-->
+            <div class="main-content">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Book Appiontment</h2>
+                    </div>
+                </div>
+    <div class="appointment-page padd-15">
+     <div class="top">
+        <div class="patient-profile" style="margin-top: 30px; display: flex; align-items: center; background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+            <img src="images/ai-generated-9019520_1280.png" alt="Profile Picture" class="profile-picture" />
+            <div class="profile-details" style="margin-left: 20px;">
+                <h3 class="profile-title">Patient Profile</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Date of Birth:</strong> January 1, 1980</p>
+                <p><strong>Medical History:</strong> No known allergies, previous surgery in 2015.</p>
+            </div>
+        </div>
+    
+        <div class="upcoming-appointments" style="margin-top: 30px;">
+            <h3 class="appointments-title">Upcoming Appointments</h3>
+            <ul class="appointment-list">
+                <li>
+                    <strong>Dr. Smith</strong> - Cardiology
+                    <span class="appointment-date">October 25, 2024, 10:00 AM</span>
+                </li>
+                <li>
+                    <strong>Dr. Johnson</strong> - Dermatology
+                    <span class="appointment-date">November 5, 2024, 2:00 PM</span>
+                </li>
+            </ul>
+        </div>
+     </div>
+        <div class="book-appointment" style="margin-top: 30px; background: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+            
+            <form action="#" method="post">
+                <h3 class="book-title">Book a New Appointment</h3>
+                <div class="form-group">
+                    <label for="doctor">Select Doctor</label>
+                    <select id="doctor" name="doctor" class="form-control" required>
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="dr-smith">Dr. Smith - Cardiology</option>
+                        <option value="dr-johnson">Dr. Johnson - Dermatology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Appointment Time</label>
+                    <input type="time" id="time" name="time" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Appointment</button>
+            </form>
+            <form action="#" method="post">
+                <h3 class="consultation-title">Request a Consultation</h3>
+                <div class="form-group">
+                    <label for="symptoms">Describe Your Symptoms</label>
+                    <textarea id="symptoms" name="symptoms" class="form-control" rows="5" required placeholder="Type your symptoms or concerns here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-doctor">Preferred Doctor (optional)</label>
+                    <select id="preferred-doctor" name="preferred-doctor" class="form-control">
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="dr-smith">Dr. Smith - Cardiology</option>
+                        <option value="dr-johnson">Dr. Johnson - Dermatology</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Consultation Request</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.985682635144!2d36.827122775629604!3d-1.1705680355119592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3d3ddc9dcb83%3A0xb8a98f57e82c014e!2sKIAMBU%20HOSPITAL%20QUARTERS!5e0!3m2!1sen!2ske!4v1729251057262!5m2!1sen!2ske" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    </div>
+   </div>
+    
+</body>
+</html>
